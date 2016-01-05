@@ -1,0 +1,32 @@
+{
+  "name": "marionette-es6-brunch",
+  "description": "Marionette brunch es6 simple app",
+  "author": "denar90",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "postinstall": "./node_modules/.bin/bower install",
+    "start": "./node_modules/.bin/brunch w --server",
+    "test": "./node_modules/.bin/brunch b --env testing && ./node_modules/.bin/testem testem -l Chrome"
+  },
+  "dependencies": {
+    "javascript-brunch": "1.8.x",
+    "css-brunch": "1.7.x",
+    "stylus-brunch": "1.8.x",
+    "handlebars-brunch": "1.10.x",
+    "uglify-js-brunch": "1.7.x",
+    "clean-css-brunch": "1.8.x",
+    "jshint-brunch": "1.7.x",
+    "babel-brunch": "6.0.0",
+    "babel-preset-es2015": "6.3.x",
+    "babel-plugin-transform-decorators-legacy": "1.3.x",
+    "bower": "1.6.x",
+    "brunch": "2.0.x"
+  },
+  "devDependencies": {
+    "testem": "~0.9.8"
+  }
+}
