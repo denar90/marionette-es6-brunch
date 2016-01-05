@@ -10,7 +10,7 @@
   "scripts": {
     "postinstall": "./node_modules/.bin/bower install",
     "start": "./node_modules/.bin/brunch w --server",
-    "test": "./node_modules/.bin/brunch b --env testing && ./node_modules/.bin/testem testem -l Chrome"
+    "test": "./node_modules/.bin/brunch b --env testing && ./node_modules/.bin/testem testem -l PhantomJS"
   },
   "dependencies": {
     "javascript-brunch": "1.8.x",
@@ -27,6 +27,7 @@
     "brunch": "2.0.x"
   },
   "devDependencies": {
+    "phantomjs": "^1.9.18",
     "testem": "~0.9.8"
   }
 }
