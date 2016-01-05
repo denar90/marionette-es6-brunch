@@ -16,7 +16,7 @@
     "javascript-brunch": "1.8.x",
     "css-brunch": "1.7.x",
     "stylus-brunch": "1.8.x",
-    "handlebars-brunch": "1.10.x",
+    "handlebars-brunch": "1.3.0",
     "uglify-js-brunch": "1.7.x",
     "clean-css-brunch": "1.8.x",
     "jshint-brunch": "1.7.x",
