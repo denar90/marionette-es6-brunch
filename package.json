@@ -9,8 +9,7 @@
   },
   "scripts": {
     "postinstall": "./node_modules/.bin/bower install",
-    "start": "./node_modules/.bin/brunch w --server",
-    "test": "./node_modules/.bin/brunch b --env testing && ./node_modules/.bin/testem testem -l PhantomJS"
+    "start": "./node_modules/.bin/brunch w --server"
   },
   "dependencies": {
     "javascript-brunch": "1.8.x",
