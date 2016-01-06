@@ -1,0 +1,13 @@
+# OS or Editor folders
+.DS_Store
+.idea/
+
+
+# NPM packages folder.
+node_modules/
+
+# Brunch output folder.
+public/
+
+# Bower stuff.
+bower_components/

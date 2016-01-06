@@ -1,0 +1,9 @@
+{
+  "name": "marionette-es6-brunch",
+  "version": "0.0.1",
+  "dependencies": {
+    "marionette": "~2.4.4",
+    "bootstrap": "~3.3.2",
+    "core.js": "~2.0.2"
+  }
+}
