@@ -1,9 +1,0 @@
-{
-  "framework": "mocha",
-  "src_files": [
-    "bower_components/chai/chai.js",
-    "public/javascripts/vendor.js",
-    "public/javascripts/app.js",
-    "public/javascripts/specs.js"
-  ]
-}

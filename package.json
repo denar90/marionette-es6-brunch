@@ -9,7 +9,8 @@
   },
   "scripts": {
     "postinstall": "./node_modules/.bin/bower install",
-    "start": "./node_modules/.bin/brunch w --server"
+    "start": "./node_modules/.bin/brunch w --server",
+    "test": "./node_modules/.bin/brunch b --env testing && ./node_modules/.bin/karma start karma.conf.js"
   },
   "dependencies": {
     "javascript-brunch": "1.8.x",
@@ -27,6 +28,9 @@
   },
   "devDependencies": {
     "phantomjs": "^1.9.18",
-    "testem": "~0.9.8"
+    "karma": "^0.13.19",
+    "karma-es6-shim": "~0.2.3",
+    "karma-mocha": "~0.2.1",
+    "karma-phantomjs-launcher": "~0.2.3"
   }
 }

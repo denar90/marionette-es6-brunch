@@ -1,11 +1,10 @@
 {
-  "name": "your-app",
+  "name": "marionette-es6-brunch",
   "version": "0.0.1",
-  "main": "public/app.js",
   "dependencies": {
     "marionette": "~2.4.4",
     "bootstrap": "~3.3.2",
-    "es6-shim": "~0.34.0"
+    "core.js": "~2.0.2"
   },
   "devDependencies": {
     "mocha": "2.3.x",
