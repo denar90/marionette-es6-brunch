@@ -8,6 +8,7 @@ module.exports = function(config) {
             "public/javascripts/vendor.js",
             "public/javascripts/app.js",
             "public/javascripts/specs.js"
-        ]
+        ],
+        singleRun: true
     });
 };
