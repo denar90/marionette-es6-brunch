@@ -3,6 +3,7 @@
   "description": "Marionette brunch es6 simple app",
   "author": "denar90",
   "version": "0.0.1",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/denar90/marionette-es6-brunch"
@@ -13,24 +14,25 @@
     "test": "./node_modules/.bin/brunch b --env testing && ./node_modules/.bin/karma start karma.conf.js"
   },
   "dependencies": {
-    "javascript-brunch": "1.8.x",
-    "css-brunch": "1.7.x",
-    "stylus-brunch": "1.8.x",
-    "handlebars-brunch": "1.3.0",
-    "uglify-js-brunch": "1.7.x",
-    "clean-css-brunch": "1.8.x",
-    "jshint-brunch": "1.7.x",
-    "babel-brunch": "6.0.0",
-    "babel-preset-es2015": "6.3.x",
-    "babel-plugin-transform-decorators-legacy": "1.3.x",
-    "bower": "1.6.x",
-    "brunch": "2.0.x"
+    "javascript-brunch": "~1.8.0",
+    "css-brunch": "~1.7.0",
+    "stylus-brunch": "~1.8.1",
+    "handlebars-brunch": "~1.9.0",
+    "uglify-js-brunch": "~1.7.8",
+    "clean-css-brunch": "~1.8.0",
+    "jshint-brunch": "~1.8.0",
+    "babel-brunch": "~6.0.0",
+    "babel-preset-es2015": "~6.3.13",
+    "babel-plugin-transform-decorators-legacy": "~1.3.4",
+    "bower": "~1.7.x",
+    "brunch": "~2.1.0"
   },
   "devDependencies": {
-    "phantomjs": "^1.9.18",
-    "karma": "^0.13.19",
+    "phantomjs": "~1.9.18",
+    "karma": "~0.13.19",
     "karma-es6-shim": "~0.2.3",
     "karma-mocha": "~0.2.1",
+    "karma-chai-plugins": "~0.6.1",
     "karma-phantomjs-launcher": "~0.2.3"
   }
 }

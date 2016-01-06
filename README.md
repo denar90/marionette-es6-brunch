@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/denar90/marionette-es6-brunch.svg?branch=master)](https://travis-ci.org/denar90/marionette-es6-brunch)
+[![Coverage Status](https://coveralls.io/repos/denar90/marionette-es6-brunch/badge.svg?branch=master&service=github)](https://coveralls.io/github/denar90/marionette-es6-brunch?branch=master)
+
 # Simple marionette brunch es6 app
 
 ## Getting started

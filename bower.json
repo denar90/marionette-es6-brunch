@@ -5,9 +5,5 @@
     "marionette": "~2.4.4",
     "bootstrap": "~3.3.2",
     "core.js": "~2.0.2"
-  },
-  "devDependencies": {
-    "mocha": "2.3.x",
-    "chai": "3.4.x"
   }
 }
