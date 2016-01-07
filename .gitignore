@@ -2,6 +2,8 @@
 .DS_Store
 .idea/
 
+#Tests log folder
+coverage
 
 # NPM packages folder.
 node_modules/
