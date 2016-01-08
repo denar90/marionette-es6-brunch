@@ -16,8 +16,7 @@ exports.config = {
           'bower_components/underscore/underscore.js',
           'bower_components/backbone/backbone.js',
           'bower_components/marionette/lib/backbone.marionette.js',
-          'bower_components/bootstrap/dist/js/bootstrap.js',
-          'bower_components/es6-shim/es6-shim.js'
+          'bower_components/bootstrap/dist/js/bootstrap.js'
         ]
       }
     },
