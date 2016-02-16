@@ -1,4 +1,4 @@
-import TableCollection from 'table/collection';
+import TableCollection from 'components/table/collection';
 
 var should = chai.should();
 var collection;

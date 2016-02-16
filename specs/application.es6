@@ -1,4 +1,4 @@
-import app from 'app';
+import app from 'components/app/app';
 
 var should = chai.should();
 

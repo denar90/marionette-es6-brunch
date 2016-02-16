@@ -1,4 +1,4 @@
-import TableModel from 'table/model';
+import TableModel from 'components/table/model';
 import config from 'config';
 
 var should = chai.should();
