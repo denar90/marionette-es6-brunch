@@ -1,7 +1,7 @@
 module.exports = function(config) {
     config.set({
         browsers: ['PhantomJS'],
-        frameworks: ['mocha', 'chai', 'es6-shim'],
+        frameworks: ['mocha', 'chai'],
         files: [
             "public/javascripts/vendor.js",
             "public/javascripts/app.js",

@@ -1,5 +1,5 @@
-import TableView from 'table/compositeView';
-import TableCollection from 'table/collection';
+import TableView from 'components/table/views/compositeView';
+import TableCollection from 'components/table/collection';
 import config from 'config';
 
 var should = chai.should();

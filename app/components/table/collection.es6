@@ -1,12 +1,15 @@
 import Model from './model';
 import config from 'config';
-import { props } from 'decorators';
 
-@props({
-    url: config.mainUrl,
-    model: Model
-})
 export default class Collection extends Backbone.Collection {
+    get model() {
+        return Model;
+    }
+
+    get url() {
+        return config.mainUrl;
+    }
+
     parse(data) {
         this.title = data.leagueCaption;
         return data.standing;
