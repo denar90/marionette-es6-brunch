@@ -1,6 +1,6 @@
 import AppRouter from './appRouter';
 import AppController from './appController';
-import config from './config';
+import config from 'config';
 
 let app = new Marionette.Application();
 

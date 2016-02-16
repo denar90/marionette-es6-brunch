@@ -1,14 +1,20 @@
-import app from 'app';
+import app from 'components/app/app';
 import ItemView from './itemView';
 import template from 'templates/table';
-import { props } from 'decorators';
 
-@props({
-    childViewContainer: 'tbody',
-    childView: ItemView,
-    template: template
-})
 export default class CompositeView extends Marionette.CompositeView {
+    get childViewContainer() {
+        return 'tbody';
+    }
+
+    get childView() {
+        return ItemView;
+    }
+
+    get template() {
+        return template;
+    }
+
     templateHelpers() {
         return {
             title: this.collection.title
