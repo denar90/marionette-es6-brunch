@@ -2,22 +2,14 @@ import app from 'components/app/app';
 import ItemView from './itemView';
 import template from 'templates/table';
 
-export default class CompositeView extends Marionette.CompositeView {
-    get childViewContainer() {
-        return 'tbody';
-    }
+export default Marionette.CompositeView.extend({
+    childViewContainer: 'tbody',
+    childView: ItemView,
+    template: template,
 
-    get childView() {
-        return ItemView;
-    }
-
-    get template() {
-        return template;
-    }
-
-    templateHelpers() {
+    templateContext() {
         return {
             title: this.collection.title
         };
     }
-}
+});

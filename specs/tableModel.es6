@@ -1,8 +1,8 @@
 import TableModel from 'components/table/model';
 import config from 'config';
 
-var should = chai.should();
-var model;
+const should = chai.should();
+let model;
 
 describe("Model", () => {
     describe("Table", () => {

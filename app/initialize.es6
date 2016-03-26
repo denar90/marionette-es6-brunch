@@ -1,5 +1,6 @@
-import app from 'components/app/app';
+import App from 'components/app/app';
 
 $(() => {
-    app.start();
+    window.app = new App;
+    window.app.start();
 });

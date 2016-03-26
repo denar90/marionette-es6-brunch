@@ -1,5 +1,5 @@
-export default class AppRouter extends Marionette.AppRouter {
-    get appRoutes() {
-        return {'': 'index'};
+export default Marionette.AppRouter.extend({
+    appRoutes: {
+        '': 'index'
     }
-}
+});
