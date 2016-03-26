@@ -2,12 +2,12 @@ import TableView from 'components/table/views/compositeView';
 import TableCollection from 'components/table/collection';
 import config from 'config';
 
-var should = chai.should();
-var table;
+const should = chai.should();
+let table;
 
 describe('Table view', () => {
     beforeEach(() => {
-        let data = {
+        const data = {
             leagueCaption: 'Lorem Ipsum',
             standing: [
                 {
@@ -41,7 +41,6 @@ describe('Table view', () => {
         $rows.each((index, row) => {
             $(row).find('td').length.should.be.equal(3);
         });
-
     });
     it('should has outsider', () => {
         let $outsiderEl = table.$childViewContainer.find('tr').last();

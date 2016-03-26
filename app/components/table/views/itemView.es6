@@ -1,14 +1,8 @@
 import template from 'templates/item';
 
-export default class ItemView extends Marionette.ItemView {
-
-    get tagName() {
-        return 'tr';
-    }
-
-    get template() {
-        return template;
-    }
+export default Marionette.View.extend({
+    tagName: 'tr',
+    template: template,
 
     initialize() {
         if (this.model.get('isLeader')) {
@@ -17,4 +11,4 @@ export default class ItemView extends Marionette.ItemView {
             this.$el.addClass('table-danger');
         }
     }
-}
+});

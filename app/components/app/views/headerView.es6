@@ -1,15 +1,7 @@
 import template from 'templates/header';
 
-export default class ItemView extends Marionette.ItemView {
-    get template() {
-        return template;
-    }
-
-    get className() {
-        return 'text-center';
-    }
-
-    get tagName() {
-        return 'h1';
-    }
-}
+export default Marionette.View.extend({
+    template: template,
+    className: 'text-center',
+    tagName: 'h1'
+});

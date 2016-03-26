@@ -9,5 +9,5 @@
 * Run `npm start`. Project will be started in `8080` port.
 * Open `http://localhost:8080/`
 
-### Testing
+## Testing
 * Run `npm test`

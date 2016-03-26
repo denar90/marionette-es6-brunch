@@ -1,6 +1,6 @@
 import config from 'config';
 
-export default class Model extends Backbone.Model {
+export default Backbone.Model.extend({
     parse(data) {
         if (data.position <= config.maxLeaderPosition) {
             this.set('isLeader', true);
@@ -9,4 +9,4 @@ export default class Model extends Backbone.Model {
         }
         return data;
     }
-}
+});

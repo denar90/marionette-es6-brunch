@@ -1,20 +1,28 @@
 import TableCollection from 'components/table/collection';
 
-var should = chai.should();
-var collection;
-var model;
+const should = chai.should();
+let collection;
+let model;
 
 describe("Collection", function() {
     describe("Table", function() {
-        beforeEach(function() {
-            var data = {
+        before(function() {
+            const data = {
                     leagueCaption: 'Lorem Ipsum',
-                    standing: [{
-                        position: 1,
-                        teamName: 'Lorem',
-                        playedGames: 10,
-                        points: 30
-                    }]
+                    standing: [
+                        {
+                            position: 1,
+                            teamName: 'Lorem',
+                            playedGames: 10,
+                            points: 30
+                        },
+                        {
+                            position: 19,
+                            teamName: 'Ipsum',
+                            playedGames: 10,
+                            points: 30
+                        }
+                    ]
                 };
             collection = new TableCollection();
             collection.add(data, {parse: true});
@@ -22,6 +30,9 @@ describe("Collection", function() {
         });
         it("should has title", function() {
             collection.title.should.be.equal('Lorem Ipsum');
+        });
+        it("should has elements", function() {
+            collection.length.should.be.equal(2);
         });
         it("should has position", function() {
             model.get('position').should.be.not.undefined;
