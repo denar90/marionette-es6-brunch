@@ -3,3 +3,11 @@ img {
     display: block;
     margin: 0 auto;
 }
+
+caption {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    color: #818a91;
+    text-align: left;
+    caption-side: top;
+}

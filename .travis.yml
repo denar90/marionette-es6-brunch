@@ -1,5 +1,7 @@
 language: node_js
 node_js:
   - '4.0'
+env:
+  - BRUNCH_ENV=CI
 after_script:
-  - cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+  - npm run build && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
