@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/denar90/marionette-es6-brunch.svg?branch=master)](https://travis-ci.org/denar90/marionette-es6-brunch)
 [![Coverage Status](https://coveralls.io/repos/denar90/marionette-es6-brunch/badge.svg?branch=master&service=github)](https://coveralls.io/github/denar90/marionette-es6-brunch?branch=master)
 
-# Simple marionette brunch es6 app
+# Simple MarionetteJS 3.0 app with Brunch
 
 ## Getting started
 * Clone repo `git clone https://github.com/denar90/marionette-es6-brunch.git`
@@ -11,3 +11,12 @@
 
 ## Testing
 * Run `npm test`
+
+## Resources
+* [MarionetteJS](marionettejs.com)
+* [Brunch](http://brunch.io/)
+* [jQuery](https://jquery.com/)
+* [Handlebars](http://handlebarsjs.com/)
+* [Mocha](https://mochajs.org/)
+* [Chai](http://chaijs.com/)
+

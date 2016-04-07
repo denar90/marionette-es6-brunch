@@ -6,8 +6,8 @@ import config from 'config';
 export default Marionette.Application.extend({
     region: '#app',
 
-    onBeforeStart: function() {
-        this.router = new AppRouter({controller: new AppController()});
+    onBeforeStart() {
+        new AppRouter({controller: new AppController()});
         $.ajaxSetup({
             headers: {
                 "accept": "application/json",
@@ -16,7 +16,7 @@ export default Marionette.Application.extend({
         });
     },
 
-    onStart: function() {
+    onStart() {
         this.showView(new AppLayout());
         Backbone.history.start({
             pushState: true

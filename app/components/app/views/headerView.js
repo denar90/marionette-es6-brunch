@@ -2,6 +2,6 @@ import template from 'templates/header';
 
 export default Marionette.View.extend({
     template: template,
-    className: 'text-center',
+    className: 'text-xs-center',
     tagName: 'h1'
 });

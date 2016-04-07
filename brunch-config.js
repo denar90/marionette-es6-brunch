@@ -1,47 +1,78 @@
+const karmaConf = {
+  CI: {
+    browsers: ['PhantomJS'],
+    frameworks: ['mocha', 'chai'],
+    files: [
+      "public/javascripts/vendor.js",
+      "public/javascripts/app.js",
+      "public/javascripts/specs.js"
+    ],
+    reporters: ['coverage', 'coveralls'],
+    preprocessors: {
+      'public/javascripts/app.js': 'coverage'
+    },
+    coverageReporter: {
+      type: 'lcov',
+      dir: 'coverage/',
+      subdir: '.'
+    },
+    singleRun: true
+  },
+  testing: {
+    browsers: ['PhantomJS'],
+    frameworks: ['mocha', 'chai'],
+    files: [
+      'public/javascripts/vendor.js',
+      'public/javascripts/app.js',
+      'public/javascripts/specs.js'
+    ],
+    singleRun: true
+  }
+};
+
 exports.config = {
   paths: {
     watched: ['app', 'specs']
   },
   files: {
     javascripts: {
-      defaultExtension: "js",
+      defaultExtension: 'js',
       joinTo: {
-        "javascripts/app.js": /^app/,
-        "javascripts/specs.js": /^specs/,
-        "javascripts/vendor.js": /^bower_components/
-      },
-      order: {
-        before: [
-          'bower_components/jquery/dist/jquery.js',
-          'bower_components/underscore/underscore.js',
-          'bower_components/backbone/backbone.js',
-          'bower_components/marionette/lib/backbone.marionette.js',
-          'bower_components/bootstrap/dist/js/bootstrap.js'
-        ]
+        'javascripts/app.js': /^app/,
+        'javascripts/specs.js': /^specs/,
+        'javascripts/vendor.js': /^(?!app|specs)/
       }
     },
     stylesheets: {
-      defaultExtension: "styl",
-      joinTo: "stylesheets/app.css"
+      defaultExtension: 'styl',
+      joinTo: 'stylesheets/app.css'
     },
     templates: {
-      defaultExtension: "hbs",
-      joinTo: "javascripts/app.js"
+      defaultExtension: 'hbs',
+      joinTo: 'javascripts/app.js'
+    }
+  },
+  npm: {
+    styles: {
+      bootstrap: ['dist/css/bootstrap.css']
+    },
+    globals: {
+      $: 'jquery',
+      Marionette: 'backbone.marionette',
+      Backbone: 'backbone'
     }
   },
   plugins: {
     babel: {
       presets: ['es2015'],
       ignore: [
-        /^(bower_components|vendor|node_modules)/
-      ],
-      pattern: /\.(es6|jsx)$/,
-      plugins: ['babel-plugin-transform-decorators-legacy']
+        /^(node_modules)/
+      ]
     }
   },
   modules: {
-      autoRequire: {
-        'javascripts/app.js': ['initialize']
+    autoRequire: {
+      'javascripts/app.js': ['initialize']
     }
   },
   server: {
@@ -54,6 +85,19 @@ exports.config = {
         autoRequire: {
           'javascripts/specs.js': ['specs/initialize']
         }
+      },
+      plugins: {
+        karma: karmaConf.testing
+      }
+    },
+    CI: {
+      modules: {
+        autoRequire: {
+          'javascripts/specs.js': ['specs/initialize']
+        }
+      },
+      plugins: {
+        karma: karmaConf.CI
       }
     }
   }

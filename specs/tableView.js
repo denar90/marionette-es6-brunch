@@ -1,12 +1,11 @@
-import TableView from 'components/table/views/compositeView';
+import TableBody from 'components/table/views/tableView';
 import TableCollection from 'components/table/collection';
-import config from 'config';
 
 const should = chai.should();
 let table;
 
 describe('Table view', () => {
-    beforeEach(() => {
+    before(() => {
         const data = {
             leagueCaption: 'Lorem Ipsum',
             standing: [
@@ -26,24 +25,24 @@ describe('Table view', () => {
         };
         let collection = new TableCollection();
         collection.add(data, {parse: true});
-        table = new TableView({collection: collection});
+        table = new TableBody({collection: collection});
         table.render();
     });
     it('should has title', () => {
-        table.$el.find('h3').text().should.be.equal('Lorem Ipsum');
+        table.$el.find('caption').text().should.be.equal('Lorem Ipsum');
     });
     it('should has leader', () => {
-        let $leaderEl = table.$childViewContainer.find('tr').first();
+        let $leaderEl = table.$el.find('tr').first();
         $leaderEl.attr('class').should.be.equal('table-info');
     });
     it('should has 4 columns', () => {
-        let $rows = table.$childViewContainer.find('tr');
+        let $rows = table.$el.find('tr');
         $rows.each((index, row) => {
-            $(row).find('td').length.should.be.equal(3);
+            $(row).find('td').length.should.be.equal(4);
         });
     });
     it('should has outsider', () => {
-        let $outsiderEl = table.$childViewContainer.find('tr').last();
+        let $outsiderEl = table.$el.find('tr').last();
         $outsiderEl.attr('class').should.be.equal('table-danger');
     });
 });
