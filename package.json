@@ -1,6 +1,6 @@
 {
   "name": "marionette-es6-brunch",
-  "description": "Marionette brunch es6 simple app",
+  "description": "Simple MarionetteJS 3.0 application with Brunch",
   "author": "denar90",
   "version": "0.0.1",
   "license": "MIT",
@@ -11,7 +11,7 @@
   "scripts": {
     "start": "./node_modules/.bin/brunch w --server",
     "build": "./node_modules/.bin/brunch build",
-    "test": "./node_modules/.bin/brunch b -env testing"
+    "test": "./node_modules/.bin/brunch b --env testing"
   },
   "dependencies": {
     "jquery": "~1.12.2",
