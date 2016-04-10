@@ -1,7 +1,6 @@
 [![Build Status](https://travis-ci.org/denar90/marionette-es6-brunch.svg?branch=master)](https://travis-ci.org/denar90/marionette-es6-brunch)
-[![Coverage Status](https://coveralls.io/repos/denar90/marionette-es6-brunch/badge.svg?branch=master&service=github)](https://coveralls.io/github/denar90/marionette-es6-brunch?branch=master)
 
-# Simple MarionetteJS 3.0 app with Brunch
+# Barclays Premier League table with MarionetteJS 3.0 and Brunch
 
 ## Getting started
 * Clone repo `git clone https://github.com/denar90/marionette-es6-brunch.git`
@@ -13,7 +12,7 @@
 * Run `npm test`
 
 ## Resources
-* [MarionetteJS](marionettejs.com)
+* [MarionetteJS](marionettejs.com) (v3.0 pre release)
 * [Brunch](http://brunch.io/)
 * [jQuery](https://jquery.com/)
 * [Handlebars](http://handlebarsjs.com/)
